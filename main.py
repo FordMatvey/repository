@@ -1,4 +1,5 @@
 import logging
+import os
 from telegram import Update
 from telegram.ext import (
     Application,
@@ -8,10 +9,9 @@ from telegram.ext import (
     filters,
 )
 
-import os
-
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
+GROUP_CHAT_ID = int(os.getenv("GROUP_CHAT_ID"))
+
 
 
 # Связь: id сообщения в группе → id пользователя
