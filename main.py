@@ -9,8 +9,8 @@ from telegram.ext import (
 )
 
 # ==== НАСТРОЙКИ ====
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-GROUP_CHAT_ID = int(os.getenv("GROUP_CHAT_ID"))
+BOT_TOKEN = "8785854898:AAG0p2CziCZ7_EfY1dj7WBueR_rBXF0RJ6w"
+GROUP_CHAT_ID = -1003980923447
 
 # Связь: id сообщения в группе → id пользователя
 message_map: dict[int, int] = {}
